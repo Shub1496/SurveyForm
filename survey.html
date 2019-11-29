@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION USER</title>
+</head>
+<link rel="stylesheet" type="text/css" href="survey_style.css">
+<body>
+
+	<div class="img-header">
+
+		<h1 id="title">CODERCAREER SURVEY FORM</h1>
+	</div>
+
+	<p id="description">
+		<em>
+			Thank you for taking the time to help us improve the website and user experience
+		</em>
+	</p>
+
+	<br>
+
+	<div class="form-container">
+
+		<form id="survey-form">
+
+			<label id="name-label">Name</label>
+			<br/>
+			<input type="text" id="name" placeholder="Enter your name" required>
+
+			<br/>
+			<br/>
+
+			<label id="email-label">Email</label>
+			<br/>
+			<input type="email" id="email" placeholder="Enter your email" required>
+
+			<br/>
+			<br/>
+
+			<label id="number-label">Age (optional)</label>
+			<br/>
+			<input type="number" id="number" placeholder="Enter your age" min="10" max="50">
+
+			<br/>
+			<br/>
+
+			<label>Pick the option best describe your current role</label>
+			<br/>
+			<input type="text" id="dropdown" list="role-list" placeholder="Select your role">
+
+				<datalist id="role-list">
+					<option value="Student">
+					<option value="Part-Time professional">
+					<option value="Full-Time professional">
+					<option value="Freelancer">
+					<option value="Prefer not to say">
+					<option value="Other">
+				</datalist>
+
+			<br/>
+			<br/>
+			<label>
+				Would you recommend CODECAREER to a friend
+			</label>
+			<br/>
+			<div class="friend-class">
+				<input type="radio" name="radiobtn" id="definetly" value="dradio">
+				<label>Definitely</label>
+				<br/>
+				<input type="radio" name="radiobtn" id="Not" value="dnotradio">
+				<label>Never</label>
+				<br/>
+				<input type="radio" name="radiobtn" id="DefinitelyNOt" value="nradio">
+				<label>Definitely Not</label>
+			</div>
+
+			<br/>
+			<br/>
+
+
+			<label>
+				What is your favourite feature of CODECAREER
+			</label>
+			<br/>
+			<input type="text" name="feature-select" list="feature-list" placeholder="Select your favourite feature" id="feature">
+
+				<datalist id="feature-list">
+					<option value="Challenges">
+					<option value="Competetive Coding">
+					<option value="Forum Support">
+					<option value="Learn-on-the-go">
+					<option value="Projects">
+					<option value="Open Source">
+				</datalist>
+
+			<br/>
+			<br/>
+
+			<label>What would you like to see improved? (Check all that apply)</label>
+
+			<div  class="friend-class">
+				<input type="checkbox" value="Projects" id="projects">
+				<label>Front and Back-end Projects</label>
+				<br/>
+				<input type="checkbox" value="Code Editor" id="codeeditor">
+				<label>Code Editor</label>
+				<br/>
+				<input type="checkbox" value="challenges" id="challenges">
+				<label>Challenges</label>
+				<br/>
+				<input type="checkbox" value="Tutorials" id="tutvideos">
+				<label>Tutorial Videos</label>
+				<br/>
+				<input type="checkbox" value="Forum" id="forum">
+				<label>Forum Supprt</label>
+				<br/>
+				<input type="checkbox" value="wiki" id="wiki">
+				<label>Wiki</label>
+			</div>
+
+			<br/>
+			<br/>
+
+			<label>Any Suggestions and Comments ?</label>
+			<br/>
+			<textarea id="suggestionscomments" placeholder="Enter your comments here">
+				
+			</textarea>
+
+			<br/>
+			<br/>
+
+			<input type="submit" name="submit" id="formsubmit">
+			
+		</form>
+
+		
+
+		
+		
+	</div>
+
+</body>
+</html>

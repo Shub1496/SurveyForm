@@ -1,0 +1,112 @@
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(50,115,220,0.3);
+	background-image: url("coding3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+
+	
+}
+
+.img-header{
+	
+	max-width: 500px;
+	margin:auto;
+	
+}
+
+#title{
+	text-align: center;
+	font-size: 4vw;
+	color: white;
+	font-weight: bold;
+}
+
+#description{
+	text-align: center;
+	font-family: "Arial";
+	font-size: 2vw;
+	color: Black;
+	font-weight: bold;
+}
+
+.form-container{
+	background-color: rgba(50,115,220,0.6);
+	max-width: 700px;
+	margin:auto;
+	align-items: center;
+	font-size: 2vw;
+	border-radius: 4px;
+	border: 3px solid #ddd;
+}
+
+label{
+	font-weight: bold;
+	color: white;
+	font-family: "Calibri";
+	padding: 12px 12px 12px 12px;
+	display: inline-block;
+}
+
+#name,#email,#number,#dropdown,.friend-class,#feature{
+	width: 90%;
+	padding: 10px;
+	margin:10px;
+	border:2px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+#suggestionscomments{
+	padding: 200px;
+	max-width: 100%;
+	margin: 20px;
+	border: 4px solid #eee;
+
+}
+
+#formsubmit{
+	width: 100%;
+	padding : 20px;
+	border-radius: 4px;
+	border: 2px solid #fff;
+	background-color: #b4cc04;
+}
+
+input[type=checkbox]{
+	position: relative;
+	top:0px;
+	left: 0px;
+	height: 20px;
+	width: 20px;
+	background-color: #ccc;
+	border:2px solid #ddd;
+}
+
+input[type=radio]{
+	position: relative;
+	top: 2px;
+	left: 10px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+
+@media (max-width: 700px){
+	#suggestionscomments{
+		align-self: center;
+		padding: :50%;
+	}
+
+	input[type=radio],input[type=checkbox]{
+		width:10px;
+		height: 10px;
+	}
+
+	label{
+		font-size: 3vw;
+	}
+}
+
